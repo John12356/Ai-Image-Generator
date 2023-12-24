@@ -13,13 +13,12 @@ const App = () => {
     try {
       if (inputRef.current.value === "") return 0;
       const response = await fetch(
-        " https://api.openai.com/v1/images/generations",
+        "https://api.openai.com/v1/images/generations",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization:
-              "Bearer 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",
+            Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
             "User-Agent": "Chrome",
           },
           body: JSON.stringify({
