@@ -41,7 +41,6 @@ npm --version
 ## How To Run
 Create the file `Ai-Image-Generator/config.env` with your Open API key:
 
-**FrontEnd**
 ```
 VITE_API_KEY = your open api key
 ```
